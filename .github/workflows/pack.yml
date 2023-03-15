@@ -21,8 +21,9 @@ jobs:
         run: |
           # ACTIONS_RUNTIME_TOKEN, ACTIONS_RUNTIME_URL should be exposed
           env|sort
-      #- name: prepare
-      #  run: docker buildx create --use --driver=docker-container
+      - name: prepare
+        run: docker buildx create --use --driver=docker-container
       - name: build
-        run: docker buildx build . --cache-from type=gha --cache-to type=gha,mode=max
+        #run: docker buildx build . --cache-from type=gha --cache-to type=gha,mode=max
+        run: docker build .
 
