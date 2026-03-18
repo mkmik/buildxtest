@@ -1,4 +1,4 @@
-FROM debian:11-slim@sha256:4333240150a6924f878e05ec2c998aec95238010e0e4d2fec6161c90128c4652
+FROM debian:11-slim@sha256:95a3884fee36b8f33bf32a6bbffa8dffe6cab6089b841cec45fb47c581a2709d
 
 RUN echo foo
 
